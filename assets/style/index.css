@@ -1,0 +1,108 @@
+:root {
+  /* Making root font size as 20px, according to the design */
+  /* Use rem everywhere to define component size */
+  /* 1rem = 32px; */
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: black;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  font-size: 2rem;
+}
+p {
+  font-size: 1rem;
+}
+
+.icon-container {
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+}
+.icon-container > img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.outline {
+  border: 0.2rem solid white;
+}
+
+#welcome-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 110vh;
+}
+
+#cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.6;
+}
+#cover > img {
+  max-width: 100%;
+}
+
+#profile-container {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+  border-top: 0.2rem solid white;
+}
+
+#profile-image {
+  position: absolute;
+  top: -5.1rem;
+  left: 5rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+#welcome-text {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+#projects-container {
+  height: 100vh;
+}
+
+/* Waving hand animation */
+/* Ref: https://codepen.io/jakejarvis/pen/pBZWZw */
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg) }
+  10% { transform: rotate(14deg) }
+  20% { transform: rotate(-8deg) }
+  30% { transform: rotate(14deg) }
+  40% { transform: rotate(-4deg) }
+  50% { transform: rotate(10deg) }
+  60% { transform: rotate(0deg) }
+  100% { transform: rotate(0deg) }
+}
