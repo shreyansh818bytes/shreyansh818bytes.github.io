@@ -1,49 +1,529 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="./assets/style/index.css" />
-    <title>Shreyansh Agarwal</title>
+    <title>Shreyansh Agarwal | ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
   </head>
   <body>
-    <div id="welcome-header">
-      <div id="cover">
-        <img src="./assets/images/cover3.jpeg" />
+    <!-- Floating nav -->
+    <nav class="floating-nav">
+      <a href="#home" class="nav-dot active" data-tooltip="Home"></a>
+      <a href="#about" class="nav-dot" data-tooltip="About"></a>
+      <a href="#skills" class="nav-dot" data-tooltip="Skills"></a>
+      <a href="#experience" class="nav-dot" data-tooltip="Experience"></a>
+      <a href="#projects" class="nav-dot" data-tooltip="Projects"></a>
+      <a href="#education" class="nav-dot" data-tooltip="Education"></a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="cover-image">
+        <img src="./assets/images/nighlight.jpeg" alt="Cover">
+        <div class="cover-overlay"></div>
       </div>
-  
-      <div id="profile-container" class="d-flex justify-contents-center">
-        <div id="profile-image" class="icon-container outline">
-          <img src="./assets/images/profile2.jpg"/>
+      
+      <div class="hero-content">
+        <div class="profile-wrapper">
+          <div class="profile-ring">
+            <div class="profile-image">
+              <img src="./assets/images/profile_gemini.jpeg" alt="Shreyansh Agarwal">
+            </div>
+          </div>
+          <div class="status-badge">
+            <span class="pulse"></span>
+            Open to work
+          </div>
         </div>
-
-        <div id="welcome-text">
-          Hi there&nbsp;<span class="wave">👋</span>
-          <br>Welcome to my portfolio website.<br>
+        
+        <h1 class="glitch" data-text="Shreyansh Agarwal">Shreyansh Agarwal</h1>
+        <p class="tagline">
+          <span class="typing-text"></span>
+          <span class="cursor">|</span>
+        </p>
+        
+        <div class="social-links">
+          <a href="mailto:shr818bytes@gmail.com" class="social-btn" data-tooltip="Email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+          <a href="https://linkedin.com/in/shreyansh818bytes" target="_blank" class="social-btn" data-tooltip="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/shreyansh818bytes" target="_blank" class="social-btn" data-tooltip="GitHub">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="tel:+917014100328" class="social-btn" data-tooltip="Call">
+            <i class="bi bi-telephone-fill"></i>
+          </a>
+        </div>
+        
+        <div class="scroll-indicator">
+          <span>scroll down</span>
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
         </div>
       </div>
-      <div
-        section="projects-timeline"
-        id="projects-container"
-        class="d-flex justify-contents-center"
-      >
-        <!-- <div id="profile-image" class="icon-container outline">
-          <img src="./assets/images/profile2.jpg"/>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-accent">//</span> who am i?
+        </h2>
+        <div class="about-content">
+          <div class="about-text reveal">
+            <p class="lead">
+              I'm a <span class="highlight">Machine Learning Engineer II</span> with 4+ years building production ML systems at the intersection of model architecture, systems engineering, and user experience.
+            </p>
+            <p>
+              I have strong architectural understanding of <span class="highlight">ViT-based vision models</span> and convolutional detectors like <span class="highlight">YOLO</span>. I've deployed foundation models (<span class="highlight">SAM 2 / SAM 3</span>) in human-in-the-loop, real-time workflows where <em>precision matters more than automation</em>. 🎯
+            </p>
+            <p>
+              When I'm not optimizing inference latency or building React frontends with WebGL visualizations, you'll find me at my desk with that foggy mountain wallpaper, probably debugging why my Docker container refuses to cooperate.
+            </p>
+            <div class="fun-facts">
+              <div class="fact-card">
+                <span class="fact-emoji">⚡</span>
+                <span class="fact-text">Sub-100ms inference? Done that.</span>
+              </div>
+              <div class="fact-card">
+                <span class="fact-emoji">🏆</span>
+                <span class="fact-text">Hackathon winner @ IIT Bombay</span>
+              </div>
+              <div class="fact-card">
+                <span class="fact-emoji">🌐</span>
+                <span class="fact-text">Full-stack: PyTorch to React</span>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div id="welcome-text">
-          Hi there&nbsp;<span class="wave">👋</span>
-          <br>Welcome to my portfolio website.<br>
-        </div> -->
       </div>
-    </div>
+    </section>
 
-    <!-- <div class="overview">
-      <div></div>
-    </div> -->
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-accent">//</span> my toolkit
+        </h2>
+        
+        <div class="skills-grid">
+          <div class="skill-category reveal" data-delay="0">
+            <div class="skill-icon">🧠</div>
+            <h3>Training & Experimentation</h3>
+            <div class="skill-tags">
+              <span class="tag tag-primary">PyTorch</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag tag-primary">LoRA</span>
+              <span class="tag">Multimodal</span>
+              <span class="tag tag-primary">SAM3</span>
+              <span class="tag">YOLO</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag tag-primary">AWS SageMaker</span>
+              <span class="tag">MLflow / W&B</span>
+              <span class="tag">DVC</span>
+            </div>
+          </div>
+          
+          <div class="skill-category reveal" data-delay="100">
+            <div class="skill-icon">⚡</div>
+            <h3>Optimisation & Benchmarking</h3>
+            <div class="skill-tags">
+              <span class="tag tag-primary">Optuna</span>
+              <span class="tag">scikit-optimize</span>
+              <span class="tag tag-primary">Quantization</span>
+              <span class="tag">Mixed-Precision</span>
+              <span class="tag">TorchScript</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">JupyterLab</span>
+              <span class="tag">Evaluation</span>
+            </div>
+          </div>
+          
+          <div class="skill-category reveal" data-delay="200">
+            <div class="skill-icon">☁️</div>
+            <h3>MLOps & Deployment</h3>
+            <div class="skill-tags">
+              <span class="tag tag-primary">Docker</span>
+              <span class="tag">AWS (EC2, S3, ECR)</span>
+              <span class="tag">Model Registry</span>
+              <span class="tag">ETL Pipelines</span>
+              <span class="tag tag-primary">CI/CD</span>
+              <span class="tag">GitLab</span>
+              <span class="tag tag-primary">AWS Neuron</span>
+              <span class="tag">AWS Inferentia</span>
+            </div>
+          </div>
+          
+          <div class="skill-category reveal" data-delay="300">
+            <div class="skill-icon">🔧</div>
+            <h3>Systems Engineering</h3>
+            <div class="skill-tags">
+              <span class="tag tag-primary">Real-time Inference</span>
+              <span class="tag tag-primary">FastAPI</span>
+              <span class="tag">WebSocket Protocol</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">COFFs</span>
+            </div>
+          </div>
+          
+          <div class="skill-category reveal" data-delay="400">
+            <div class="skill-icon">🎨</div>
+            <h3>Frontend & Visualisation</h3>
+            <div class="skill-tags">
+              <span class="tag tag-primary">React (TypeScript)</span>
+              <span class="tag tag-primary">CesiumJS</span>
+              <span class="tag">Maplibre</span>
+              <span class="tag">ONNX Runtime Web</span>
+              <span class="tag tag-primary">WebAssembly</span>
+              <span class="tag">WebGL</span>
+              <span class="tag">WebGPU</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-accent">//</span> where i've shipped code
+        </h2>
+        
+        <div class="timeline">
+          <!-- ML Engineer II -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Machine Learning Engineer II</h3>
+                  <span class="company">Aereo</span>
+                </div>
+                <span class="date">Current Role</span>
+              </div>
+              <p class="location"><i class="bi bi-geo-alt"></i> Bengaluru, India</p>
+              
+              <div class="achievements">
+                <div class="achievement-card" data-category="research">
+                  <span class="achievement-tag">🔬 AI Research</span>
+                  <p>Led R&D for AI-assisted digitization workflows, integrating <strong>Segment Anything Model (SAM)</strong> into a geospatial platform for prompt-based, real-time segmentation of drone imagery.</p>
+                </div>
+                
+                <div class="achievement-card" data-category="systems">
+                  <span class="achievement-tag">⚡ Real-Time Systems</span>
+                  <p>Designed a high-concurrency <strong>RTI server</strong> using parallel, async <strong>WebSockets</strong> for low-latency, hover-based prediction interactions. Smooth like butter.</p>
+                </div>
+                
+                <div class="achievement-card" data-category="optimization">
+                  <span class="achievement-tag">🚀 Performance</span>
+                  <p>Optimized model pipelines for <strong>2x performance improvement</strong>, enabling use of lower-cost GPU instances and significantly reducing infrastructure overhead.</p>
+                </div>
+                
+                <div class="achievement-card" data-category="latency">
+                  <span class="achievement-tag">⏱️ Latency</span>
+                  <p>Reduced end-to-end inference to <strong>sub-100ms</strong> by re-engineering SAM2 state management and freezing the image encoder. Speed is a feature.</p>
+                </div>
+                
+                <div class="achievement-card" data-category="leadership">
+                  <span class="achievement-tag">👥 Leadership</span>
+                  <p>Mentored a cross-functional team on production ML standards, leading the transition from research PoC to <strong>horizontally scalable cloud infrastructure</strong>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- ML Engineer -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker marker-secondary"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Machine Learning Engineer</h3>
+                  <span class="company">Aereo</span>
+                </div>
+                <span class="date">Promoted</span>
+              </div>
+              
+              <div class="achievements">
+                <div class="achievement-card" data-category="architecture">
+                  <span class="achievement-tag">🏗️ Architecture</span>
+                  <p>Architected and delivered <strong>10+ production ML workflows</strong>, consolidating fragmented models into a unified pipeline—<strong>75% faster</strong> model onboarding.</p>
+                </div>
+                
+                <div class="achievement-card" data-category="multimodal">
+                  <span class="achievement-tag">🧠 Multimodal</span>
+                  <p>Fine-tuned a <strong>ViT-based multimodal architecture</strong> using <strong>LoRA adapters</strong>, extending RGB vision pipeline with DEM modality via mid-fusion architecture.</p>
+                </div>
+                
+                <div class="achievement-card" data-category="optimization">
+                  <span class="achievement-tag">📈 Throughput</span>
+                  <p>Improved inference throughput by <strong>33%</strong> by strategically merging LoRA layer weights back into base model—fewer FLOPs, same quality.</p>
+                </div>
+                
+                <div class="achievement-card" data-category="ml">
+                  <span class="achievement-tag">🎯 Hyperparameter Tuning</span>
+                  <p>Led <strong>hyperparameter optimization</strong> for complex unsupervised ML algorithms, achieving <strong>20% direct improvement</strong> in model accuracy.</p>
+                </div>
+                
+                <div class="achievement-card" data-category="algorithms">
+                  <span class="achievement-tag">✨ Post-processing</span>
+                  <p>Implemented feature-specific post-processing algorithm: <strong>89% → 95% accuracy</strong>. Geometric consistency for high-stakes customer demos. 💼</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Intern -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker marker-tertiary"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Engineering Intern</h3>
+                  <span class="company">Aereo</span>
+                </div>
+                <span class="date">Jun 2021</span>
+              </div>
+              
+              <div class="achievements">
+                <div class="achievement-card" data-category="infra">
+                  <span class="achievement-tag">🐳 Infrastructure</span>
+                  <p>Designed a cross-platform, <strong>Docker-based inference ecosystem</strong> with memory-safe tiling and batching for multi-gigabyte GeoTIFF processing.</p>
+                </div>
+                
+                <div class="achievement-card" data-category="detection">
+                  <span class="achievement-tag">🎯 Object Detection</span>
+                  <p>Fine-tuned a <strong>YOLO-based object detection</strong> model for domain-specific targets, achieving <strong>93% detection accuracy</strong> through dataset curation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-accent">//</span> things i've built
+        </h2>
+        
+        <div class="projects-grid">
+          <div class="project-card reveal" data-delay="0">
+            <div class="project-icon">🌿</div>
+            <div class="project-badge">🥇 Hackathon Winner</div>
+            <h3>Green Initiatives Toolkit</h3>
+            <p class="project-date">Aug 2024</p>
+            <p>Led development of a QGIS-based toolkit for land rehabilitation using <strong>SAM-based segmentation</strong>. Built multiple geospatial models and packaged the functional plugin in one week to win the internal hackathon.</p>
+            <div class="project-tags">
+              <span>SAM</span>
+              <span>QGIS</span>
+              <span>Python</span>
+              <span>GIS</span>
+            </div>
+          </div>
+          
+          <div class="project-card reveal" data-delay="100">
+            <div class="project-icon">🎓</div>
+            <div class="project-badge">🔴 Live</div>
+            <h3>Student Activities Group CMS</h3>
+            <p class="project-date">Jul 2023</p>
+            <p>Spearheaded full-stack development of a <strong>centralized CMS</strong> for university clubs. Applied <strong>Agile/SCRUM</strong> methodologies for rapid feature iteration. Check it out live!</p>
+            <div class="project-tags">
+              <span>Full-Stack</span>
+              <span>Agile</span>
+              <span>CMS</span>
+            </div>
+            <a href="https://sag.mlvti.ac.in" target="_blank" class="project-link">
+              <i class="bi bi-box-arrow-up-right"></i> Visit Site
+            </a>
+          </div>
+          
+          <div class="project-card reveal" data-delay="200">
+            <div class="project-icon">🔐</div>
+            <div class="project-badge">🏆 Global Winner</div>
+            <h3>MFA Microservice</h3>
+            <p class="project-date">Dec 2021</p>
+            <p>Won the <strong>global hackathon at IIT Bombay</strong> with a multi-factor authentication microservice using <strong>FlaskAPI</strong> for third-party application integration. Secure backend auth logic done right.</p>
+            <div class="project-tags">
+              <span>Flask</span>
+              <span>Security</span>
+              <span>MFA</span>
+              <span>API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-accent">//</span> where i learned stuff
+        </h2>
+        
+        <div class="education-grid">
+          <div class="education-card reveal">
+            <div class="edu-icon">🎓</div>
+            <h3>B.Tech in Information Technology</h3>
+            <p class="institution">M.L.V. Textile & Engineering College</p>
+            <p class="edu-location"><i class="bi bi-geo-alt"></i> Bhilwara, India</p>
+            <p class="edu-date">Oct 2020 — May 2024</p>
+          </div>
+          
+          <div class="education-card reveal" data-delay="100">
+            <div class="edu-icon">💻</div>
+            <h3>Foundation Degree in Programming & Data Science</h3>
+            <p class="institution">Indian Institute of Technology, Madras</p>
+            <p class="edu-location"><i class="bi bi-geo-alt"></i> Remote</p>
+            <p class="edu-date">Jan 2021 — Apr 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          Built with ☕ and probably too much debugging
+        </p>
+        <div class="footer-links">
+          <a href="mailto:shr818bytes@gmail.com">shr818bytes@gmail.com</a>
+          <span class="divider">•</span>
+          <a href="https://github.com/shreyansh818bytes" target="_blank">GitHub</a>
+          <span class="divider">•</span>
+          <a href="https://linkedin.com/in/shreyansh818bytes" target="_blank">LinkedIn</a>
+        </div>
+        <p class="copyright">© 2024 Shreyansh Agarwal. Ship it. 🚀</p>
+      </div>
+    </footer>
+
+    <script>
+      // Typing animation
+      const phrases = [
+        "Production ML systems 🚀",
+        "SAM 3 & YOLO whisperer",
+        "Human-in-the-loop workflows",
+        "React + PyTorch full-stack",
+        "WebAssembly enthusiast ⚡",
+        "Real-time inference engineer"
+      ];
+      
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const typingElement = document.querySelector('.typing-text');
+      
+      function type() {
+        const currentPhrase = phrases[phraseIndex];
+        
+        if (isDeleting) {
+          typingElement.textContent = currentPhrase.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typingElement.textContent = currentPhrase.substring(0, charIndex + 1);
+          charIndex++;
+        }
+        
+        let typeSpeed = isDeleting ? 30 : 70;
+        
+        if (!isDeleting && charIndex === currentPhrase.length) {
+          typeSpeed = 2000;
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          typeSpeed = 500;
+        }
+        
+        setTimeout(type, typeSpeed);
+      }
+      
+      type();
+      
+      // Scroll reveal animation
+      const revealElements = document.querySelectorAll('.reveal');
+      
+      const revealOnScroll = () => {
+        revealElements.forEach(el => {
+          const elementTop = el.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          const delay = el.dataset.delay || 0;
+          
+          if (elementTop < windowHeight - 100) {
+            setTimeout(() => {
+              el.classList.add('revealed');
+            }, delay);
+          }
+        });
+      };
+      
+      window.addEventListener('scroll', revealOnScroll);
+      revealOnScroll();
+      
+      // Navigation active state
+      const sections = document.querySelectorAll('section');
+      const navDots = document.querySelectorAll('.nav-dot');
+      
+      window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          
+          if (scrollY >= sectionTop - 300) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navDots.forEach(dot => {
+          dot.classList.remove('active');
+          if (dot.getAttribute('href') === `#${current}`) {
+            dot.classList.add('active');
+          }
+        });
+      });
+      
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+      
+      // Parallax effect on cover image
+      window.addEventListener('scroll', () => {
+        const cover = document.querySelector('.cover-image img');
+        const scrolled = window.scrollY;
+        cover.style.transform = `translateY(${scrolled * 0.3}px) scale(1.1)`;
+      });
+      
+      // Achievement cards interactive hover
+      document.querySelectorAll('.achievement-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateX(10px) scale(1.02)';
+        });
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateX(0) scale(1)';
+        });
+      });
+    </script>
   </body>
 </html>
