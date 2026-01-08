@@ -258,7 +258,7 @@
               <div class="achievements">
                 <div class="achievement-card" data-category="architecture">
                   <span class="achievement-tag">🏗️ Architecture</span>
-                  <p>Architected and delivered <strong>10+ production ML workflows</strong>, consolidating fragmented models into a unified pipeline—<strong>75% faster</strong> model onboarding.</p>
+                  <p>Architected and delivered <strong>10+ production ML workflows</strong>, consolidating fragmented models into a unified pipeline. <strong>75% faster</strong> model onboarding.</p>
                 </div>
                 
                 <div class="achievement-card" data-category="multimodal">
@@ -268,7 +268,7 @@
                 
                 <div class="achievement-card" data-category="optimization">
                   <span class="achievement-tag">📈 Throughput</span>
-                  <p>Improved inference throughput by <strong>33%</strong> by strategically merging LoRA layer weights back into base model—fewer FLOPs, same quality.</p>
+                  <p>Improved inference throughput by <strong>33%</strong> by strategically merging LoRA layer weights back into base model. Fewer FLOPs, same quality.</p>
                 </div>
                 
                 <div class="achievement-card" data-category="ml">
@@ -278,7 +278,7 @@
                 
                 <div class="achievement-card" data-category="algorithms">
                   <span class="achievement-tag">✨ Post-processing</span>
-                  <p>Implemented feature-specific post-processing algorithm: <strong>89% → 95% accuracy</strong>. Geometric consistency for high-stakes customer demos. 💼</p>
+                  <p>Implemented feature-specific post-processing algorithm: <strong>immediate accuracy ↑</strong>. Visual consistency for high-stakes client demos. 💼</p>
                 </div>
               </div>
             </div>
@@ -399,7 +399,7 @@
     <footer class="footer">
       <div class="container">
         <p class="footer-text">
-          Built with ☕ and probably too much debugging
+          Built with attention layers and caffeine ☕
         </p>
         <div class="footer-links">
           <a href="mailto:shr818bytes@gmail.com">shr818bytes@gmail.com</a>
@@ -408,11 +408,14 @@
           <span class="divider">•</span>
           <a href="https://linkedin.com/in/shreyansh818bytes" target="_blank">LinkedIn</a>
         </div>
-        <p class="copyright">© 2024 Shreyansh Agarwal. Ship it. 🚀</p>
+        <p class="copyright">© <span id="current-year"></span> Shreyansh Agarwal 🚀</p>
       </div>
     </footer>
 
     <script>
+      // Dynamic year
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+      
       // Typing animation
       const phrases = [
         "Shipping models, not excuses 🚀",
